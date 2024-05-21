@@ -39,7 +39,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.windowScene = windowScene
     
-    let vc = LoginController()
+    let vc = ChangePasswordViewController()
     let nav = UINavigationController(rootViewController: vc)
     
     window?.rootViewController = nav
