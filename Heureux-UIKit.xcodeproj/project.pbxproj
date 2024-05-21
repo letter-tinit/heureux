@@ -9,21 +9,83 @@
 /* Begin PBXBuildFile section */
 		2C434F142BF84B4E00E3577D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434F132BF84B4E00E3577D /* AppDelegate.swift */; };
 		2C434F162BF84B4E00E3577D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434F152BF84B4E00E3577D /* SceneDelegate.swift */; };
-		2C434F182BF84B4E00E3577D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434F172BF84B4E00E3577D /* ViewController.swift */; };
-		2C434F1B2BF84B4E00E3577D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2C434F1A2BF84B4E00E3577D /* Base */; };
+		2C434F182BF84B4E00E3577D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434F172BF84B4E00E3577D /* LoginController.swift */; };
 		2C434F1D2BF84B5100E3577D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C434F1C2BF84B5100E3577D /* Assets.xcassets */; };
 		2C434F202BF84B5100E3577D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2C434F1F2BF84B5100E3577D /* Base */; };
+		2C4BB0CA2BFC7F0A00EA2F07 /* authentication.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */; };
+		2C50C3502BF856E200019688 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C50C34F2BF856E200019688 /* RegisterTextField.swift */; };
+		2C50C3532BF85C4800019688 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2C50C3522BF85C4800019688 /* Lottie */; };
+		2C50C3572BF8667500019688 /* education.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C50C3552BF8667500019688 /* education.json */; };
+		2C50C3582BF8667500019688 /* join.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C50C3562BF8667500019688 /* join.json */; };
+		2C5B5F5A2BF882ED00F5674F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F592BF882ED00F5674F /* MainTabBarViewController.swift */; };
+		2C5B5F5E2BF883F000F5674F /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F5D2BF883F000F5674F /* GeneralViewController.swift */; };
+		2C5B5F602BF883F800F5674F /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F5F2BF883F800F5674F /* TaskViewController.swift */; };
+		2C5B5F622BF8843200F5674F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F612BF8843200F5674F /* ReportViewController.swift */; };
+		2C5B5F652BF8844700F5674F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F642BF8844700F5674F /* DashboardViewController.swift */; };
+		2C5B5F682BF8924700F5674F /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F672BF8924700F5674F /* PasswordTextField.swift */; };
+		2C5B5F6A2BF897B400F5674F /* StrokeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F692BF897B400F5674F /* StrokeButton.swift */; };
+		2C5B5F6D2BF89B2200F5674F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F6C2BF89B2200F5674F /* UIFont+Extension.swift */; };
+		2C5B5F6F2BF89EE100F5674F /* NoBackgroundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F6E2BF89EE100F5674F /* NoBackgroundButton.swift */; };
+		2C5B5F712BF8A13D00F5674F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F702BF8A13D00F5674F /* DividerView.swift */; };
+		2C5B5F742BF8A4D300F5674F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2C5B5F732BF8A4D300F5674F /* IQKeyboardManagerSwift */; };
+		2C5B5F762BF8A79B00F5674F /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F752BF8A79B00F5674F /* GoogleButton.swift */; };
+		2C5B5F782BF8B85F00F5674F /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F772BF8B85F00F5674F /* TextButton.swift */; };
+		2C5B5F7B2BF8C40800F5674F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F7A2BF8C40800F5674F /* SignUpViewController.swift */; };
+		2C5B5F7D2BF8C59100F5674F /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F7C2BF8C59100F5674F /* SampleViewController.swift */; };
+		2C641B732BFB990300731357 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C641B722BFB990300731357 /* ProfileViewController.swift */; };
+		2C641B762BFBA3C800731357 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C641B752BFBA3C800731357 /* AddTaskViewController.swift */; };
+		2C641B7A2BFBB55300731357 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C641B792BFBB55300731357 /* TaskDetailViewController.swift */; };
+		2C94752A2BF9F19E00559108 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9475292BF9F19E00559108 /* ProfileEditViewController.swift */; };
+		2C94752C2BFA01A600559108 /* CustomNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */; };
+		2C94B8002BFC21A5009BA1BD /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94B7FF2BFC21A5009BA1BD /* ChangePasswordViewController.swift */; };
+		2C98B6CA2BFAF05000F0DE31 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98B6C92BFAF05000F0DE31 /* Task.swift */; };
+		2C98B6CC2BFAF1A400F0DE31 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98B6CB2BFAF1A400F0DE31 /* TaskTableViewCell.swift */; };
+		2CAF66592BF98E780056A4CE /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF66582BF98E780056A4CE /* UIImage+Extension.swift */; };
+		2CAF665B2BF98EEB0056A4CE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF665A2BF98EEB0056A4CE /* CircleImage.swift */; };
+		2CAF665D2BF9B0E40056A4CE /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF665C2BF9B0E40056A4CE /* ProfileRow.swift */; };
+		2CAF665F2BF9C5CF0056A4CE /* SimpleDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */; };
+		2CAF66632BF9C7FC0056A4CE /* ProfileRowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF66622BF9C7FC0056A4CE /* ProfileRowContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C434F102BF84B4E00E3577D /* Heureux-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heureux-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C434F132BF84B4E00E3577D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C434F152BF84B4E00E3577D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C434F172BF84B4E00E3577D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C434F1A2BF84B4E00E3577D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C434F172BF84B4E00E3577D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2C434F1C2BF84B5100E3577D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C434F1F2BF84B5100E3577D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C434F212BF84B5100E3577D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = authentication.json; sourceTree = "<group>"; };
+		2C50C34F2BF856E200019688 /* RegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
+		2C50C3552BF8667500019688 /* education.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = education.json; sourceTree = "<group>"; };
+		2C50C3562BF8667500019688 /* join.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = join.json; sourceTree = "<group>"; };
+		2C5B5F592BF882ED00F5674F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		2C5B5F5D2BF883F000F5674F /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		2C5B5F5F2BF883F800F5674F /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		2C5B5F612BF8843200F5674F /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		2C5B5F642BF8844700F5674F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		2C5B5F672BF8924700F5674F /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		2C5B5F692BF897B400F5674F /* StrokeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeButton.swift; sourceTree = "<group>"; };
+		2C5B5F6C2BF89B2200F5674F /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		2C5B5F6E2BF89EE100F5674F /* NoBackgroundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoBackgroundButton.swift; sourceTree = "<group>"; };
+		2C5B5F702BF8A13D00F5674F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		2C5B5F752BF8A79B00F5674F /* GoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButton.swift; sourceTree = "<group>"; };
+		2C5B5F772BF8B85F00F5674F /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		2C5B5F7A2BF8C40800F5674F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2C5B5F7C2BF8C59100F5674F /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		2C641B722BFB990300731357 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2C641B752BFBA3C800731357 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		2C641B792BFBB55300731357 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		2C9475292BF9F19E00559108 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTitle.swift; sourceTree = "<group>"; };
+		2C94B7FF2BFC21A5009BA1BD /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		2C98B6C92BFAF05000F0DE31 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2C98B6CB2BFAF1A400F0DE31 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		2CAF66582BF98E780056A4CE /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		2CAF665A2BF98EEB0056A4CE /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		2CAF665C2BF9B0E40056A4CE /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
+		2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDivider.swift; sourceTree = "<group>"; };
+		2CAF66622BF9C7FC0056A4CE /* ProfileRowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRowContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C50C3532BF85C4800019688 /* Lottie in Frameworks */,
+				2C5B5F742BF8A4D300F5674F /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +120,165 @@
 		2C434F122BF84B4E00E3577D /* Heureux-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				2C434F132BF84B4E00E3577D /* AppDelegate.swift */,
-				2C434F152BF84B4E00E3577D /* SceneDelegate.swift */,
-				2C434F172BF84B4E00E3577D /* ViewController.swift */,
-				2C434F192BF84B4E00E3577D /* Main.storyboard */,
-				2C434F1C2BF84B5100E3577D /* Assets.xcassets */,
-				2C434F1E2BF84B5100E3577D /* LaunchScreen.storyboard */,
+				2C98B6C82BFAF04700F0DE31 /* Model */,
+				2C5B5F6B2BF89B1400F5674F /* Extension */,
+				2C5B5F662BF8922C00F5674F /* CustomView */,
+				2C5B5F582BF8824500F5674F /* View */,
+				2C5B5F572BF8823600F5674F /* Supporting */,
+				2C50C3542BF8666800019688 /* Animation */,
 				2C434F212BF84B5100E3577D /* Info.plist */,
 			);
 			path = "Heureux-UIKit";
+			sourceTree = "<group>";
+		};
+		2C50C3542BF8666800019688 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */,
+				2C50C3552BF8667500019688 /* education.json */,
+				2C50C3562BF8667500019688 /* join.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		2C5B5F572BF8823600F5674F /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				2C434F132BF84B4E00E3577D /* AppDelegate.swift */,
+				2C434F152BF84B4E00E3577D /* SceneDelegate.swift */,
+				2C434F1C2BF84B5100E3577D /* Assets.xcassets */,
+				2C434F1E2BF84B5100E3577D /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		2C5B5F582BF8824500F5674F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C5B5F792BF8C26300F5674F /* Auth */,
+				2C5B5F632BF8843700F5674F /* Tab */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C5B5F632BF8843700F5674F /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2C5B5F592BF882ED00F5674F /* MainTabBarViewController.swift */,
+				2C94B7FE2BFC212E009BA1BD /* Task */,
+				2C641B742BFBA3AF00731357 /* General */,
+				2C9475282BF9F18500559108 /* Profile */,
+				2C5B5F612BF8843200F5674F /* ReportViewController.swift */,
+				2C5B5F642BF8844700F5674F /* DashboardViewController.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		2C5B5F662BF8922C00F5674F /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2C641B782BFBACFF00731357 /* Auth */,
+				2C641B772BFBACF100731357 /* Task */,
+				2CAF66612BF9C7D80056A4CE /* General */,
+				2CAF66602BF9C7CF0056A4CE /* ProfileView */,
+				2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		2C5B5F6B2BF89B1400F5674F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2C5B5F6C2BF89B2200F5674F /* UIFont+Extension.swift */,
+				2CAF66582BF98E780056A4CE /* UIImage+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2C5B5F792BF8C26300F5674F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2C434F172BF84B4E00E3577D /* LoginController.swift */,
+				2C5B5F7A2BF8C40800F5674F /* SignUpViewController.swift */,
+				2C5B5F7C2BF8C59100F5674F /* SampleViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2C641B742BFBA3AF00731357 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				2C5B5F5D2BF883F000F5674F /* GeneralViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		2C641B772BFBACF100731357 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				2C98B6CB2BFAF1A400F0DE31 /* TaskTableViewCell.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		2C641B782BFBACFF00731357 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2C50C34F2BF856E200019688 /* RegisterTextField.swift */,
+				2C5B5F672BF8924700F5674F /* PasswordTextField.swift */,
+				2C5B5F692BF897B400F5674F /* StrokeButton.swift */,
+				2C5B5F6E2BF89EE100F5674F /* NoBackgroundButton.swift */,
+				2C5B5F702BF8A13D00F5674F /* DividerView.swift */,
+				2C5B5F752BF8A79B00F5674F /* GoogleButton.swift */,
+				2C5B5F772BF8B85F00F5674F /* TextButton.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2C9475282BF9F18500559108 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2C9475292BF9F19E00559108 /* ProfileEditViewController.swift */,
+				2C641B722BFB990300731357 /* ProfileViewController.swift */,
+				2C94B7FF2BFC21A5009BA1BD /* ChangePasswordViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2C94B7FE2BFC212E009BA1BD /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				2C5B5F5F2BF883F800F5674F /* TaskViewController.swift */,
+				2C641B752BFBA3C800731357 /* AddTaskViewController.swift */,
+				2C641B792BFBB55300731357 /* TaskDetailViewController.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		2C98B6C82BFAF04700F0DE31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C98B6C92BFAF05000F0DE31 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CAF66602BF9C7CF0056A4CE /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				2CAF665A2BF98EEB0056A4CE /* CircleImage.swift */,
+				2CAF665C2BF9B0E40056A4CE /* ProfileRow.swift */,
+				2CAF66622BF9C7FC0056A4CE /* ProfileRowContainer.swift */,
+				2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		2CAF66612BF9C7D80056A4CE /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +297,10 @@
 			dependencies = (
 			);
 			name = "Heureux-UIKit";
+			packageProductDependencies = (
+				2C50C3522BF85C4800019688 /* Lottie */,
+				2C5B5F732BF8A4D300F5674F /* IQKeyboardManagerSwift */,
+			);
 			productName = "Heureux-UIKit";
 			productReference = 2C434F102BF84B4E00E3577D /* Heureux-UIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +329,10 @@
 				Base,
 			);
 			mainGroup = 2C434F072BF84B4E00E3577D;
+			packageReferences = (
+				2C50C3512BF85C4800019688 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				2C5B5F722BF8A4D300F5674F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 2C434F112BF84B4E00E3577D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +348,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C434F1D2BF84B5100E3577D /* Assets.xcassets in Resources */,
+				2C50C3582BF8667500019688 /* join.json in Resources */,
+				2C50C3572BF8667500019688 /* education.json in Resources */,
 				2C434F202BF84B5100E3577D /* Base in Resources */,
-				2C434F1B2BF84B4E00E3577D /* Base in Resources */,
+				2C4BB0CA2BFC7F0A00EA2F07 /* authentication.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +362,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C434F182BF84B4E00E3577D /* ViewController.swift in Sources */,
+				2C98B6CC2BFAF1A400F0DE31 /* TaskTableViewCell.swift in Sources */,
+				2CAF665F2BF9C5CF0056A4CE /* SimpleDivider.swift in Sources */,
+				2C5B5F6F2BF89EE100F5674F /* NoBackgroundButton.swift in Sources */,
+				2C5B5F782BF8B85F00F5674F /* TextButton.swift in Sources */,
+				2C5B5F5E2BF883F000F5674F /* GeneralViewController.swift in Sources */,
+				2C5B5F5A2BF882ED00F5674F /* MainTabBarViewController.swift in Sources */,
+				2C5B5F712BF8A13D00F5674F /* DividerView.swift in Sources */,
+				2C5B5F7B2BF8C40800F5674F /* SignUpViewController.swift in Sources */,
+				2CAF66632BF9C7FC0056A4CE /* ProfileRowContainer.swift in Sources */,
+				2CAF66592BF98E780056A4CE /* UIImage+Extension.swift in Sources */,
+				2C50C3502BF856E200019688 /* RegisterTextField.swift in Sources */,
+				2C5B5F762BF8A79B00F5674F /* GoogleButton.swift in Sources */,
+				2C94B8002BFC21A5009BA1BD /* ChangePasswordViewController.swift in Sources */,
+				2C434F182BF84B4E00E3577D /* LoginController.swift in Sources */,
+				2C5B5F622BF8843200F5674F /* ReportViewController.swift in Sources */,
+				2C5B5F602BF883F800F5674F /* TaskViewController.swift in Sources */,
+				2C5B5F652BF8844700F5674F /* DashboardViewController.swift in Sources */,
+				2C5B5F6A2BF897B400F5674F /* StrokeButton.swift in Sources */,
+				2C641B762BFBA3C800731357 /* AddTaskViewController.swift in Sources */,
 				2C434F142BF84B4E00E3577D /* AppDelegate.swift in Sources */,
+				2C641B732BFB990300731357 /* ProfileViewController.swift in Sources */,
+				2CAF665D2BF9B0E40056A4CE /* ProfileRow.swift in Sources */,
+				2C5B5F6D2BF89B2200F5674F /* UIFont+Extension.swift in Sources */,
+				2CAF665B2BF98EEB0056A4CE /* CircleImage.swift in Sources */,
+				2C94752C2BFA01A600559108 /* CustomNavigationTitle.swift in Sources */,
+				2C641B7A2BFBB55300731357 /* TaskDetailViewController.swift in Sources */,
+				2C94752A2BF9F19E00559108 /* ProfileEditViewController.swift in Sources */,
+				2C5B5F7D2BF8C59100F5674F /* SampleViewController.swift in Sources */,
+				2C5B5F682BF8924700F5674F /* PasswordTextField.swift in Sources */,
+				2C98B6CA2BFAF05000F0DE31 /* Task.swift in Sources */,
 				2C434F162BF84B4E00E3577D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +399,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2C434F192BF84B4E00E3577D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C434F1A2BF84B4E00E3577D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C434F1E2BF84B5100E3577D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -295,11 +539,13 @@
 				DEVELOPMENT_TEAM = U5KX54M7F5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Heureux-UIKit/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Heureux;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +553,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.letter.Heureux-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,11 +573,13 @@
 				DEVELOPMENT_TEAM = U5KX54M7F5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Heureux-UIKit/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Heureux;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +587,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.letter.Heureux-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +619,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C50C3512BF85C4800019688 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+		2C5B5F722BF8A4D300F5674F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C50C3522BF85C4800019688 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C50C3512BF85C4800019688 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		2C5B5F732BF8A4D300F5674F /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5B5F722BF8A4D300F5674F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C434F082BF84B4E00E3577D /* Project object */;
 }
