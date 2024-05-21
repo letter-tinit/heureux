@@ -25,16 +25,15 @@ class ChangePasswordViewController: UIViewController {
   private let newPasswordTextField = RegisterTextField(symbol: "pencil", placeholder: "New password")
   private let confirmPasswordTextField = RegisterTextField(symbol: "pencil", placeholder: "Confirm password")
   private let saveButton = StrokeButton(title: "Save change")
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-//    navigationItem.rightBarButtonItem = UIBarButtonItem(customView: CustomNavigationTitle(title: "A"))
-    navigationItem.rightBarButtonItem = UIBarButtonItem(title: "A", style: .done, target: self, action: nil)
+    navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: nil)
+    navigationItem.rightBarButtonItem?.tintColor = .systemGreen
     setupView()
   }
   
 }
-
 
 // MARK: - VIEW SETUP
 private extension ChangePasswordViewController {
