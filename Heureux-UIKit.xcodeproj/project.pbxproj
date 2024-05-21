@@ -13,12 +13,12 @@
 		2C434F1D2BF84B5100E3577D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C434F1C2BF84B5100E3577D /* Assets.xcassets */; };
 		2C434F202BF84B5100E3577D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2C434F1F2BF84B5100E3577D /* Base */; };
 		2C4BB0CA2BFC7F0A00EA2F07 /* authentication.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */; };
+		2C4BB0CD2BFC8D7C00EA2F07 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */; };
 		2C50C3502BF856E200019688 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C50C34F2BF856E200019688 /* RegisterTextField.swift */; };
 		2C50C3532BF85C4800019688 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2C50C3522BF85C4800019688 /* Lottie */; };
 		2C50C3572BF8667500019688 /* education.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C50C3552BF8667500019688 /* education.json */; };
 		2C50C3582BF8667500019688 /* join.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C50C3562BF8667500019688 /* join.json */; };
 		2C5B5F5A2BF882ED00F5674F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F592BF882ED00F5674F /* MainTabBarViewController.swift */; };
-		2C5B5F5E2BF883F000F5674F /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F5D2BF883F000F5674F /* GeneralViewController.swift */; };
 		2C5B5F602BF883F800F5674F /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F5F2BF883F800F5674F /* TaskViewController.swift */; };
 		2C5B5F622BF8843200F5674F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F612BF8843200F5674F /* ReportViewController.swift */; };
 		2C5B5F652BF8844700F5674F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B5F642BF8844700F5674F /* DashboardViewController.swift */; };
@@ -56,11 +56,11 @@
 		2C434F1F2BF84B5100E3577D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C434F212BF84B5100E3577D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = authentication.json; sourceTree = "<group>"; };
+		2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 		2C50C34F2BF856E200019688 /* RegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
 		2C50C3552BF8667500019688 /* education.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = education.json; sourceTree = "<group>"; };
 		2C50C3562BF8667500019688 /* join.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = join.json; sourceTree = "<group>"; };
 		2C5B5F592BF882ED00F5674F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		2C5B5F5D2BF883F000F5674F /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		2C5B5F5F2BF883F800F5674F /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		2C5B5F612BF8843200F5674F /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		2C5B5F642BF8844700F5674F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +131,14 @@
 			path = "Heureux-UIKit";
 			sourceTree = "<group>";
 		};
+		2C4BB0CB2BFC8D6600EA2F07 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		2C50C3542BF8666800019688 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,9 +172,9 @@
 		2C5B5F632BF8843700F5674F /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				2C4BB0CB2BFC8D6600EA2F07 /* Class */,
 				2C5B5F592BF882ED00F5674F /* MainTabBarViewController.swift */,
 				2C94B7FE2BFC212E009BA1BD /* Task */,
-				2C641B742BFBA3AF00731357 /* General */,
 				2C9475282BF9F18500559108 /* Profile */,
 				2C5B5F612BF8843200F5674F /* ReportViewController.swift */,
 				2C5B5F642BF8844700F5674F /* DashboardViewController.swift */,
@@ -203,14 +211,6 @@
 				2C5B5F7C2BF8C59100F5674F /* SampleViewController.swift */,
 			);
 			path = Auth;
-			sourceTree = "<group>";
-		};
-		2C641B742BFBA3AF00731357 /* General */ = {
-			isa = PBXGroup;
-			children = (
-				2C5B5F5D2BF883F000F5674F /* GeneralViewController.swift */,
-			);
-			path = General;
 			sourceTree = "<group>";
 		};
 		2C641B772BFBACF100731357 /* Task */ = {
@@ -364,9 +364,9 @@
 			files = (
 				2C98B6CC2BFAF1A400F0DE31 /* TaskTableViewCell.swift in Sources */,
 				2CAF665F2BF9C5CF0056A4CE /* SimpleDivider.swift in Sources */,
+				2C4BB0CD2BFC8D7C00EA2F07 /* ClassViewController.swift in Sources */,
 				2C5B5F6F2BF89EE100F5674F /* NoBackgroundButton.swift in Sources */,
 				2C5B5F782BF8B85F00F5674F /* TextButton.swift in Sources */,
-				2C5B5F5E2BF883F000F5674F /* GeneralViewController.swift in Sources */,
 				2C5B5F5A2BF882ED00F5674F /* MainTabBarViewController.swift in Sources */,
 				2C5B5F712BF8A13D00F5674F /* DividerView.swift in Sources */,
 				2C5B5F7B2BF8C40800F5674F /* SignUpViewController.swift in Sources */,

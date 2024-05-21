@@ -15,8 +15,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     
-    
-    
     UINavigationBar.appearance().tintColor = .colorPink
     
     //    if #available(iOS 15, *) {
@@ -39,10 +37,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.windowScene = windowScene
     
-    let vc = ChangePasswordViewController()
+    let vc = MainTabBarViewController()
     let nav = UINavigationController(rootViewController: vc)
     
-    window?.rootViewController = nav
+    window?.rootViewController = vc
     window?.makeKeyAndVisible()
   }
   

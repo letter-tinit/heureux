@@ -17,31 +17,27 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
   }
   
   func setupTab() {
-    let generalViewController = GeneralViewController()
-    let generalNavController = UINavigationController(rootViewController: generalViewController)
-    generalNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "general"), tag: 0)
-    generalNavController.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
+    let classViewController = ClassViewController()
+    let classNavController = UINavigationController(rootViewController: classViewController)
+    classNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
     
     let taskViewController = TaskViewController()
     let taskNavController = UINavigationController(rootViewController: taskViewController)
-    taskNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "task"), tag: 1)
-    taskNavController.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
+    taskNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "checklist"), selectedImage: UIImage(systemName: "checklist.checked"))
     
     let reportViewController = ReportViewController()
-    reportViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "report"), tag: 2)
-    reportViewController.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
+    reportViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "doc.text.below.ecg"), selectedImage: UIImage(systemName: "doc.text.below.ecg.fill"))
     
     let dashboardViewController = DashboardViewController()
-    dashboardViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "dashboard"), tag: 3)
-    dashboardViewController.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
-    
+    dashboardViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "chart.pie"), selectedImage: UIImage(systemName: "chart.pie.fill"))
+
     let profileViewController = ProfileViewController()
     let profileNavController = UINavigationController(rootViewController: profileViewController)
-    profileNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "profile"), tag: 4)
-    profileNavController.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
+    profileNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
+
     
 //    setViewControllers([generalNavController, profileNavController, taskViewController, reportViewController, dashboardViewController], animated: true)
-    setViewControllers([profileNavController, generalNavController, reportViewController, dashboardViewController], animated: true)
+    setViewControllers([classNavController, taskNavController, reportViewController, dashboardViewController, profileNavController], animated: true)
   }
   
   func setupTabBarAppearance() {
