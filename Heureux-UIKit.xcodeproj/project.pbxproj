@@ -139,6 +139,14 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
+		2C4BB0CE2BFC999600EA2F07 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		2C50C3542BF8666800019688 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,9 +193,9 @@
 		2C5B5F662BF8922C00F5674F /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				2C4BB0CE2BFC999600EA2F07 /* General */,
 				2C641B782BFBACFF00731357 /* Auth */,
 				2C641B772BFBACF100731357 /* Task */,
-				2CAF66612BF9C7D80056A4CE /* General */,
 				2CAF66602BF9C7CF0056A4CE /* ProfileView */,
 				2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */,
 			);
@@ -269,16 +277,8 @@
 				2CAF665A2BF98EEB0056A4CE /* CircleImage.swift */,
 				2CAF665C2BF9B0E40056A4CE /* ProfileRow.swift */,
 				2CAF66622BF9C7FC0056A4CE /* ProfileRowContainer.swift */,
-				2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */,
 			);
 			path = ProfileView;
-			sourceTree = "<group>";
-		};
-		2CAF66612BF9C7D80056A4CE /* General */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -27,7 +27,7 @@ class ClassViewController: UIViewController {
     button.heightAnchor.constraint(equalToConstant: 60).isActive = true
     return button
   }()
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
@@ -60,7 +60,12 @@ private extension ClassViewController {
 
 // MARK: - LAYOUT
 private extension ClassViewController {
-  func layout() {}
+  func layout() {
+    NSLayoutConstraint.activate([
+      addButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -40),
+      addButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40),
+    ])
+  }
 }
 
 // MARK: - SETUP ACTION
