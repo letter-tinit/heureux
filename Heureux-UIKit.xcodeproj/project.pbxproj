@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2B075A2BFDCE09004F48E4 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B07592BFDCE09004F48E4 /* ProjectViewController.swift */; };
 		2C434F142BF84B4E00E3577D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434F132BF84B4E00E3577D /* AppDelegate.swift */; };
 		2C434F162BF84B4E00E3577D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434F152BF84B4E00E3577D /* SceneDelegate.swift */; };
 		2C434F182BF84B4E00E3577D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434F172BF84B4E00E3577D /* LoginController.swift */; };
@@ -38,6 +39,9 @@
 		2C641B732BFB990300731357 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C641B722BFB990300731357 /* ProfileViewController.swift */; };
 		2C641B762BFBA3C800731357 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C641B752BFBA3C800731357 /* AddTaskViewController.swift */; };
 		2C641B7A2BFBB55300731357 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C641B792BFBB55300731357 /* TaskDetailViewController.swift */; };
+		2C7AB34F2BFD812B00928DEE /* teaching.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C7AB34E2BFD812B00928DEE /* teaching.json */; };
+		2C7AB3512BFD94AC00928DEE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AB3502BFD94AC00928DEE /* UIColor+Extension.swift */; };
+		2C7AB3532BFD9DAA00928DEE /* ClassMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AB3522BFD9DAA00928DEE /* ClassMemberViewController.swift */; };
 		2C94752A2BF9F19E00559108 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9475292BF9F19E00559108 /* ProfileEditViewController.swift */; };
 		2C94752C2BFA01A600559108 /* CustomNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */; };
 		2C94B8002BFC21A5009BA1BD /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94B7FF2BFC21A5009BA1BD /* ChangePasswordViewController.swift */; };
@@ -52,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C2B07592BFDCE09004F48E4 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		2C434F102BF84B4E00E3577D /* Heureux-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heureux-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C434F132BF84B4E00E3577D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C434F152BF84B4E00E3577D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +88,9 @@
 		2C641B722BFB990300731357 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2C641B752BFBA3C800731357 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		2C641B792BFBB55300731357 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		2C7AB34E2BFD812B00928DEE /* teaching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teaching.json; sourceTree = "<group>"; };
+		2C7AB3502BFD94AC00928DEE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2C7AB3522BFD9DAA00928DEE /* ClassMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMemberViewController.swift; sourceTree = "<group>"; };
 		2C9475292BF9F19E00559108 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTitle.swift; sourceTree = "<group>"; };
 		2C94B7FF2BFC21A5009BA1BD /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2B07582BFDCCF0004F48E4 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				2C2B07592BFDCE09004F48E4 /* ProjectViewController.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
 		2C434F072BF84B4E00E3577D = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +160,7 @@
 			children = (
 				2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */,
 				2CD7D7752BFCD53400A0A45D /* ClassDetailViewController.swift */,
+				2C7AB3522BFD9DAA00928DEE /* ClassMemberViewController.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -168,6 +185,7 @@
 		2C50C3542BF8666800019688 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				2C7AB34E2BFD812B00928DEE /* teaching.json */,
 				2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */,
 				2C50C3552BF8667500019688 /* education.json */,
 				2C50C3562BF8667500019688 /* join.json */,
@@ -201,6 +219,7 @@
 				2C5B5F592BF882ED00F5674F /* MainTabBarViewController.swift */,
 				2C4BB0CB2BFC8D6600EA2F07 /* Class */,
 				2C94B7FE2BFC212E009BA1BD /* Task */,
+				2C2B07582BFDCCF0004F48E4 /* Project */,
 				2C9475282BF9F18500559108 /* Profile */,
 				2C5B5F612BF8843200F5674F /* ReportViewController.swift */,
 				2C5B5F642BF8844700F5674F /* DashboardViewController.swift */,
@@ -226,6 +245,7 @@
 			children = (
 				2C5B5F6C2BF89B2200F5674F /* UIFont+Extension.swift */,
 				2CAF66582BF98E780056A4CE /* UIImage+Extension.swift */,
+				2C7AB3502BFD94AC00928DEE /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -367,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7AB34F2BFD812B00928DEE /* teaching.json in Resources */,
 				2C434F1D2BF84B5100E3577D /* Assets.xcassets in Resources */,
 				2C50C3582BF8667500019688 /* join.json in Resources */,
 				2C50C3572BF8667500019688 /* education.json in Resources */,
@@ -385,6 +406,7 @@
 				2C98B6CC2BFAF1A400F0DE31 /* TaskTableViewCell.swift in Sources */,
 				2CAF665F2BF9C5CF0056A4CE /* SimpleDivider.swift in Sources */,
 				2C4BB0CD2BFC8D7C00EA2F07 /* ClassViewController.swift in Sources */,
+				2C7AB3512BFD94AC00928DEE /* UIColor+Extension.swift in Sources */,
 				2C5B5F6F2BF89EE100F5674F /* NoBackgroundButton.swift in Sources */,
 				2C5B5F782BF8B85F00F5674F /* TextButton.swift in Sources */,
 				2C5B5F5A2BF882ED00F5674F /* MainTabBarViewController.swift in Sources */,
@@ -400,6 +422,7 @@
 				2C5B5F622BF8843200F5674F /* ReportViewController.swift in Sources */,
 				2C5B5F602BF883F800F5674F /* TaskViewController.swift in Sources */,
 				2C5B5F652BF8844700F5674F /* DashboardViewController.swift in Sources */,
+				2C7AB3532BFD9DAA00928DEE /* ClassMemberViewController.swift in Sources */,
 				2C5B5F6A2BF897B400F5674F /* StrokeButton.swift in Sources */,
 				2C641B762BFBA3C800731357 /* AddTaskViewController.swift in Sources */,
 				2C434F142BF84B4E00E3577D /* AppDelegate.swift in Sources */,
@@ -410,6 +433,7 @@
 				2CD7D7762BFCD53400A0A45D /* ClassDetailViewController.swift in Sources */,
 				2C94752C2BFA01A600559108 /* CustomNavigationTitle.swift in Sources */,
 				2C641B7A2BFBB55300731357 /* TaskDetailViewController.swift in Sources */,
+				2C2B075A2BFDCE09004F48E4 /* ProjectViewController.swift in Sources */,
 				2C94752A2BF9F19E00559108 /* ProfileEditViewController.swift in Sources */,
 				2C5B5F7D2BF8C59100F5674F /* SampleViewController.swift in Sources */,
 				2C4BB0D52BFC9D2600EA2F07 /* AddButton.swift in Sources */,

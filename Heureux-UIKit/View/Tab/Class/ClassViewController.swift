@@ -117,7 +117,6 @@ private extension ClassViewController {
     alertController.addAction(addAction)
     
     present(alertController, animated: true)
-    
   }
   
 }
@@ -203,8 +202,14 @@ extension ClassViewController: UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print("Tapped")
-    let classDetailViewController = ClassDetailViewController()
+    var currentClass: Class
+    if indexPath.section == 0 {
+      currentClass = inProgress[indexPath.row]
+    } else {
+      currentClass = finish[indexPath.row]
+    }
+    
+    let classDetailViewController = ClassDetailViewController(currentClass: currentClass)
     navigationController?.pushViewController(classDetailViewController, animated: true)
   }
 }

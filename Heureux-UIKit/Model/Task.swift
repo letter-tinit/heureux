@@ -45,7 +45,7 @@ extension TaskProgress {
 
 struct Task {
   let name: String
-  let status: TaskProgress?
+  let status: TaskProgress
   let deadline: Date?
   let description: String?
 }
@@ -56,7 +56,7 @@ struct Data {
     Task(name: "Task 2", status: .overdue, deadline: .now, description: "This is Task 2"),
     Task(name: "Task 3", status: .upcoming, deadline: .now, description: "This is Task 3"),
     Task(name: "Task 5", status: .completed, deadline: .now, description: "This is Task 5"),
-    Task(name: "Task 4", status: .working, deadline: .now, description: "This is Task 4")
+    Task(name: "Task 4", status: .working, deadline: nil, description: "This is Task 4")
   ]
   
   static var classes = [

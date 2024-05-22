@@ -10,6 +10,15 @@ import UIKit
 enum ClassStatus: String {
   case inProgress = "In Progress"
   case finished = "Finished"
+  
+  var splitStatus: String {
+    switch self {
+    case .inProgress:
+      "Finished"
+    case .finished:
+      "In Progress"
+    }
+  }
 }
 
 enum ClassColor: String {

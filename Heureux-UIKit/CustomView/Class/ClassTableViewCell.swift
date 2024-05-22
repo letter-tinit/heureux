@@ -21,7 +21,7 @@ class ClassTableViewCell : UITableViewCell {
     let imageView = UIImageView(frame: .zero)
     imageView.image = UIImage(systemName: "book.closed.fill")
     imageView.contentMode = .scaleAspectFit
-    imageView.tintColor = .systemBrown
+    imageView.tintColor = .systemCyan
     imageView.translatesAutoresizingMaskIntoConstraints = false
     return imageView
   }()
@@ -90,6 +90,6 @@ class ClassTableViewCell : UITableViewCell {
   
   func config(item: Class) {
     className.text = item.name
-    contentView.backgroundColor = item.color.withAlphaComponent(0.3)
+    contentView.backgroundColor = UIColor.random().withAlphaComponent(0.3)
   }
 }
