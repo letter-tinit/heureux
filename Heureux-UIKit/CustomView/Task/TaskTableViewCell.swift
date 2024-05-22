@@ -148,10 +148,14 @@ class TaskTableViewCell: UITableViewCell {
     self.icon.image = UIImage(systemName: task.status.symbol)
     self.taskName.text = task.name
     
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "MMM d, h:mm a"
-
-    deadlineLabel.text = dateFormatter.string(from: task.deadline)
-
+    if let deadline = task.deadline {
+      let dateFormatter = DateFormatter()
+      dateFormatter.dateFormat = "MMM d, h:mm a"
+      
+      deadlineLabel.text = dateFormatter.string(from: deadline)
+    } else {
+      deadlineLabel.text = "Not set"
+    }
+    
   }
 }

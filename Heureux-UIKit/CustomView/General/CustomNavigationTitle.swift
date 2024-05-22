@@ -20,6 +20,6 @@ class CustomNavigationTitle: UILabel {
   private func setupView(title: String) {
     self.text = title
     self.textColor = .black
-    self.font = .rounded(ofSize: 24, weight: .semibold)
+    self.font = .rounded(ofSize: 26, weight: .semibold)
   }
 }
