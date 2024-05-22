@@ -78,17 +78,17 @@ class ProfileViewController: UIViewController {
   lazy var aboutus = ProfileRow(icon: "person.3", title: "About Us")
   
   private let divider2 = SimpleDivider(color: .systemGray5, height: 1)
-
+  
   lazy var frequentlyAsked = ProfileRow(icon: "questionmark.circle", title: "Frequently asked questions")
   
   private let divider3 = SimpleDivider(color: .systemGray5, height: 1)
-
+  
   lazy var customerCare = ProfileRow(icon: "stethoscope", title: "Customer care")
   
   private let divider4 = SimpleDivider(color: .systemGray5, height: 1)
-
+  
   lazy var errorReport = ProfileRow(icon: "exclamationmark.triangle", title: "Error report")
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
@@ -230,7 +230,7 @@ private extension ProfileViewController {
     alertController.addTextField { textField in
       textField.placeholder = "Description"
     }
-
+    
     let submitAction = UIAlertAction(title: "Submit", style: .default) { _ in
       guard let text = alertController.textFields![0].text else {
         return
@@ -239,10 +239,10 @@ private extension ProfileViewController {
     }
     
     let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
-
+    
     alertController.addAction(cancelAction)
     alertController.addAction(submitAction)
-
+    
     present(alertController, animated: true, completion: nil)
   }
   

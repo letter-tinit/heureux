@@ -11,24 +11,7 @@ class TaskViewController: UIViewController {
   
   var tasks = Data.tasks
   
-  lazy var addButton: UIButton = {
-    let button = UIButton(frame: .zero)
-    
-    let config = UIImage.SymbolConfiguration(font: .rounded(ofSize: 30, weight: .bold))
-    button.setImage(UIImage(systemName: "plus", withConfiguration: config), for: .normal)
-    button.backgroundColor = .systemBlue.withAlphaComponent(0.6)
-    button.layer.shadowColor = UIColor.black.cgColor
-    button.layer.shadowRadius = 7
-    button.layer.shadowOpacity = 0.4
-    button.layer.shadowOffset = CGSize(width: 10, height: 10)
-    button.layer.cornerRadius = 30
-    button.tintColor = .white
-    
-    button.translatesAutoresizingMaskIntoConstraints = false
-    button.widthAnchor.constraint(equalToConstant: 60).isActive = true
-    button.heightAnchor.constraint(equalToConstant: 60).isActive = true
-    return button
-  }()
+  lazy var addButton = AddButton(color: .systemBlue)
   
   lazy var taskTableView: UITableView = {
     let tableView = UITableView(frame: .zero)
@@ -52,12 +35,19 @@ private extension TaskViewController {
     layout()
     setupAction()
   }
-  
+}
+
+// MARK: - CONFIG NAV
+
+private extension TaskViewController {
   func configNav() {
+    navigationItem.backButtonTitle = ""
     let titleLabel = CustomNavigationTitle(title: "Tasks")
     navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleLabel)
   }
 }
+
+
 // MARK: - ADD VIEW
 private extension TaskViewController {
   func addSubView() {
@@ -95,23 +85,44 @@ private extension TaskViewController {
 // MARK: - CATCH ACTION
 private extension TaskViewController {
   @objc func addButtonTapped() {
-    let addTaskViewController = AddTaskViewController()
+//    let addTaskViewController = AddTaskViewController()
+//    
+//    if #available(iOS 16.0, *) {
+//      let fraction = UISheetPresentationController.Detent.custom { context in
+//        UIScreen.main.bounds.height / 2
+//      }
+//      if let presentationController = addTaskViewController.presentationController as? UISheetPresentationController {
+//        presentationController.detents = [fraction, .large()]
+//      }
+//    } else {
+//      if let presentationController = addTaskViewController.presentationController as? UISheetPresentationController {
+//        presentationController.detents = [.medium(), .large()]
+//      }
+//    }
+//    
+//    present(addTaskViewController, animated: true)
     
-    if #available(iOS 16.0, *) {
-      let fraction = UISheetPresentationController.Detent.custom { context in
-        UIScreen.main.bounds.height / 2
-      }
-      if let presentationController = addTaskViewController.presentationController as? UISheetPresentationController {
-        presentationController.detents = [fraction, .large()]
-      }
-    } else {
-      if let presentationController = addTaskViewController.presentationController as? UISheetPresentationController {
-        presentationController.detents = [.medium(), .large()]
-      }
+    let alertController = UIAlertController(title: "Create Task", message: nil, preferredStyle: .alert)
+    alertController.addTextField { textField in
+      textField.placeholder = "Task Name"
+      textField.font = .rounded(ofSize: 16, weight: .medium)
+      textField.tintColor = .colorPink
+      textField.textColor = .black
     }
     
-    present(addTaskViewController, animated: true)
-
+    let addAction = UIAlertAction(title: "Add", style: .default) { _ in
+      guard let text = alertController.textFields![0].text else {
+        return
+      }
+      print(text)
+    }
+    
+    let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+    
+    alertController.addAction(cancelAction)
+    alertController.addAction(addAction)
+    
+    present(alertController, animated: true)
   }
 }
 
@@ -143,9 +154,9 @@ extension TaskViewController: UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    let task = tasks[indexPath.row]
-//    let taskDetailViewController = TaskDetailViewController()
-//    taskDetailViewController.task = task
+    //    let task = tasks[indexPath.row]
+    //    let taskDetailViewController = TaskDetailViewController()
+    //    taskDetailViewController.task = task
     navigationController?.pushViewController(TaskDetailViewController(), animated: true)
   }
   

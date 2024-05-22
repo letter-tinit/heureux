@@ -45,9 +45,9 @@ extension TaskProgress {
 
 struct Task {
   let name: String
-  let status: TaskProgress
-  let deadline: Date
-  let description: String
+  let status: TaskProgress?
+  let deadline: Date?
+  let description: String?
 }
 
 struct Data {
@@ -57,5 +57,20 @@ struct Data {
     Task(name: "Task 3", status: .upcoming, deadline: .now, description: "This is Task 3"),
     Task(name: "Task 5", status: .completed, deadline: .now, description: "This is Task 5"),
     Task(name: "Task 4", status: .working, deadline: .now, description: "This is Task 4")
+  ]
+  
+  static var classes = [
+    Class(name: "PRN909", color: .orange, status: .finished),
+    Class(name: "EXE909", color: .blue, status: .finished),
+    Class(name: "SWD909", color: .green, status: .inProgress),
+    Class(name: "PRN909", color: .orange, status: .finished),
+    Class(name: "EXE909", color: .blue, status: .finished),
+    Class(name: "SWD909", color: .green, status: .inProgress),
+    Class(name: "PRN909", color: .orange, status: .finished),
+    Class(name: "EXE909", color: .blue, status: .finished),
+    Class(name: "SWD909", color: .green, status: .inProgress),
+    Class(name: "PRN909", color: .orange, status: .finished),
+    Class(name: "EXE909", color: .blue, status: .finished),
+    Class(name: "SWD909", color: .green, status: .inProgress),
   ]
 }

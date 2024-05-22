@@ -14,6 +14,9 @@
 		2C434F202BF84B5100E3577D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2C434F1F2BF84B5100E3577D /* Base */; };
 		2C4BB0CA2BFC7F0A00EA2F07 /* authentication.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */; };
 		2C4BB0CD2BFC8D7C00EA2F07 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */; };
+		2C4BB0D02BFC9AA000EA2F07 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BB0CF2BFC9AA000EA2F07 /* Class.swift */; };
+		2C4BB0D32BFC9C0300EA2F07 /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BB0D22BFC9C0300EA2F07 /* ClassTableViewCell.swift */; };
+		2C4BB0D52BFC9D2600EA2F07 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BB0D42BFC9D2600EA2F07 /* AddButton.swift */; };
 		2C50C3502BF856E200019688 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C50C34F2BF856E200019688 /* RegisterTextField.swift */; };
 		2C50C3532BF85C4800019688 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2C50C3522BF85C4800019688 /* Lottie */; };
 		2C50C3572BF8667500019688 /* education.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C50C3552BF8667500019688 /* education.json */; };
@@ -45,6 +48,7 @@
 		2CAF665D2BF9B0E40056A4CE /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF665C2BF9B0E40056A4CE /* ProfileRow.swift */; };
 		2CAF665F2BF9C5CF0056A4CE /* SimpleDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */; };
 		2CAF66632BF9C7FC0056A4CE /* ProfileRowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF66622BF9C7FC0056A4CE /* ProfileRowContainer.swift */; };
+		2CD7D7762BFCD53400A0A45D /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7D7752BFCD53400A0A45D /* ClassDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,9 @@
 		2C434F212BF84B5100E3577D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = authentication.json; sourceTree = "<group>"; };
 		2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		2C4BB0CF2BFC9AA000EA2F07 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		2C4BB0D22BFC9C0300EA2F07 /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		2C4BB0D42BFC9D2600EA2F07 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		2C50C34F2BF856E200019688 /* RegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
 		2C50C3552BF8667500019688 /* education.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = education.json; sourceTree = "<group>"; };
 		2C50C3562BF8667500019688 /* join.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = join.json; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 		2CAF665C2BF9B0E40056A4CE /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 		2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDivider.swift; sourceTree = "<group>"; };
 		2CAF66622BF9C7FC0056A4CE /* ProfileRowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRowContainer.swift; sourceTree = "<group>"; };
+		2CD7D7752BFCD53400A0A45D /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */,
+				2CD7D7752BFCD53400A0A45D /* ClassDetailViewController.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -143,8 +152,17 @@
 			isa = PBXGroup;
 			children = (
 				2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */,
+				2C4BB0D42BFC9D2600EA2F07 /* AddButton.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		2C4BB0D12BFC9BE600EA2F07 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BB0D22BFC9C0300EA2F07 /* ClassTableViewCell.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		2C50C3542BF8666800019688 /* Animation */ = {
@@ -180,8 +198,8 @@
 		2C5B5F632BF8843700F5674F /* Tab */ = {
 			isa = PBXGroup;
 			children = (
-				2C4BB0CB2BFC8D6600EA2F07 /* Class */,
 				2C5B5F592BF882ED00F5674F /* MainTabBarViewController.swift */,
+				2C4BB0CB2BFC8D6600EA2F07 /* Class */,
 				2C94B7FE2BFC212E009BA1BD /* Task */,
 				2C9475282BF9F18500559108 /* Profile */,
 				2C5B5F612BF8843200F5674F /* ReportViewController.swift */,
@@ -193,6 +211,7 @@
 		2C5B5F662BF8922C00F5674F /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				2C4BB0D12BFC9BE600EA2F07 /* Class */,
 				2C4BB0CE2BFC999600EA2F07 /* General */,
 				2C641B782BFBACFF00731357 /* Auth */,
 				2C641B772BFBACF100731357 /* Task */,
@@ -267,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				2C98B6C92BFAF05000F0DE31 /* Task.swift */,
+				2C4BB0CF2BFC9AA000EA2F07 /* Class.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -370,6 +390,7 @@
 				2C5B5F5A2BF882ED00F5674F /* MainTabBarViewController.swift in Sources */,
 				2C5B5F712BF8A13D00F5674F /* DividerView.swift in Sources */,
 				2C5B5F7B2BF8C40800F5674F /* SignUpViewController.swift in Sources */,
+				2C4BB0D32BFC9C0300EA2F07 /* ClassTableViewCell.swift in Sources */,
 				2CAF66632BF9C7FC0056A4CE /* ProfileRowContainer.swift in Sources */,
 				2CAF66592BF98E780056A4CE /* UIImage+Extension.swift in Sources */,
 				2C50C3502BF856E200019688 /* RegisterTextField.swift in Sources */,
@@ -386,10 +407,13 @@
 				2CAF665D2BF9B0E40056A4CE /* ProfileRow.swift in Sources */,
 				2C5B5F6D2BF89B2200F5674F /* UIFont+Extension.swift in Sources */,
 				2CAF665B2BF98EEB0056A4CE /* CircleImage.swift in Sources */,
+				2CD7D7762BFCD53400A0A45D /* ClassDetailViewController.swift in Sources */,
 				2C94752C2BFA01A600559108 /* CustomNavigationTitle.swift in Sources */,
 				2C641B7A2BFBB55300731357 /* TaskDetailViewController.swift in Sources */,
 				2C94752A2BF9F19E00559108 /* ProfileEditViewController.swift in Sources */,
 				2C5B5F7D2BF8C59100F5674F /* SampleViewController.swift in Sources */,
+				2C4BB0D52BFC9D2600EA2F07 /* AddButton.swift in Sources */,
+				2C4BB0D02BFC9AA000EA2F07 /* Class.swift in Sources */,
 				2C5B5F682BF8924700F5674F /* PasswordTextField.swift in Sources */,
 				2C98B6CA2BFAF05000F0DE31 /* Task.swift in Sources */,
 				2C434F162BF84B4E00E3577D /* SceneDelegate.swift in Sources */,
