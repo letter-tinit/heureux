@@ -13,6 +13,8 @@
 		2C434F182BF84B4E00E3577D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434F172BF84B4E00E3577D /* LoginController.swift */; };
 		2C434F1D2BF84B5100E3577D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C434F1C2BF84B5100E3577D /* Assets.xcassets */; };
 		2C434F202BF84B5100E3577D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2C434F1F2BF84B5100E3577D /* Base */; };
+		2C4A09762BFDEA2F00EFD87D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A09752BFDEA2F00EFD87D /* User.swift */; };
+		2C4A09782BFDEB6C00EFD87D /* ClassMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A09772BFDEB6C00EFD87D /* ClassMemberTableViewCell.swift */; };
 		2C4BB0CA2BFC7F0A00EA2F07 /* authentication.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */; };
 		2C4BB0CD2BFC8D7C00EA2F07 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */; };
 		2C4BB0D02BFC9AA000EA2F07 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BB0CF2BFC9AA000EA2F07 /* Class.swift */; };
@@ -64,6 +66,8 @@
 		2C434F1C2BF84B5100E3577D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C434F1F2BF84B5100E3577D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C434F212BF84B5100E3577D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4A09752BFDEA2F00EFD87D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2C4A09772BFDEB6C00EFD87D /* ClassMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMemberTableViewCell.swift; sourceTree = "<group>"; };
 		2C4BB0C92BFC7F0A00EA2F07 /* authentication.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = authentication.json; sourceTree = "<group>"; };
 		2C4BB0CC2BFC8D7C00EA2F07 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 		2C4BB0CF2BFC9AA000EA2F07 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				2C4BB0D22BFC9C0300EA2F07 /* ClassTableViewCell.swift */,
+				2C4A09772BFDEB6C00EFD87D /* ClassMemberTableViewCell.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			children = (
 				2C98B6C92BFAF05000F0DE31 /* Task.swift */,
 				2C4BB0CF2BFC9AA000EA2F07 /* Class.swift */,
+				2C4A09752BFDEA2F00EFD87D /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,6 +428,7 @@
 				2C5B5F622BF8843200F5674F /* ReportViewController.swift in Sources */,
 				2C5B5F602BF883F800F5674F /* TaskViewController.swift in Sources */,
 				2C5B5F652BF8844700F5674F /* DashboardViewController.swift in Sources */,
+				2C4A09782BFDEB6C00EFD87D /* ClassMemberTableViewCell.swift in Sources */,
 				2C7AB3532BFD9DAA00928DEE /* ClassMemberViewController.swift in Sources */,
 				2C5B5F6A2BF897B400F5674F /* StrokeButton.swift in Sources */,
 				2C641B762BFBA3C800731357 /* AddTaskViewController.swift in Sources */,
@@ -429,6 +436,7 @@
 				2C641B732BFB990300731357 /* ProfileViewController.swift in Sources */,
 				2CAF665D2BF9B0E40056A4CE /* ProfileRow.swift in Sources */,
 				2C5B5F6D2BF89B2200F5674F /* UIFont+Extension.swift in Sources */,
+				2C4A09762BFDEA2F00EFD87D /* User.swift in Sources */,
 				2CAF665B2BF98EEB0056A4CE /* CircleImage.swift in Sources */,
 				2CD7D7762BFCD53400A0A45D /* ClassDetailViewController.swift in Sources */,
 				2C94752C2BFA01A600559108 /* CustomNavigationTitle.swift in Sources */,

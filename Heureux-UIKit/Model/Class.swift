@@ -44,4 +44,5 @@ struct Class {
   let name: String
   let color: UIColor
   let status: ClassStatus
+  let description: String?
 }
