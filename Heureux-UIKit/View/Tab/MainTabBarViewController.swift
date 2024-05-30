@@ -21,9 +21,9 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     let classNavController = UINavigationController(rootViewController: classViewController)
     classNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
     
-    let taskViewController = TaskViewController()
-    let taskNavController = UINavigationController(rootViewController: taskViewController)
-    taskNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "checklist"), selectedImage: UIImage(systemName: "checklist.checked"))
+    let projectViewController = ProjectViewController()
+    let projectNavController = UINavigationController(rootViewController: projectViewController)
+    projectNavController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "doc.badge.gearshape"), selectedImage: UIImage(systemName: "doc.badge.gearshape.fill"))
     
     let reportViewController = ReportViewController()
     reportViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "doc.text.below.ecg"), selectedImage: UIImage(systemName: "doc.text.below.ecg.fill"))
@@ -37,7 +37,7 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
 
     
 //    setViewControllers([generalNavController, profileNavController, taskViewController, reportViewController, dashboardViewController], animated: true)
-    setViewControllers([classNavController, taskNavController, reportViewController, dashboardViewController, profileNavController], animated: true)
+    setViewControllers([classNavController, projectNavController, reportViewController, dashboardViewController, profileNavController], animated: true)
   }
   
   func setupTabBarAppearance() {
