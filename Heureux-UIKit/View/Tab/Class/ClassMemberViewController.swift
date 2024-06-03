@@ -104,7 +104,6 @@ private extension ClassMemberViewController {
     alertController.addAction(addAction)
     
     present(alertController, animated: true)
-    
   }
 }
 
