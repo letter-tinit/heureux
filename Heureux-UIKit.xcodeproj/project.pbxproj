@@ -54,6 +54,7 @@
 		2CAF665D2BF9B0E40056A4CE /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF665C2BF9B0E40056A4CE /* ProfileRow.swift */; };
 		2CAF665F2BF9C5CF0056A4CE /* SimpleDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */; };
 		2CAF66632BF9C7FC0056A4CE /* ProfileRowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF66622BF9C7FC0056A4CE /* ProfileRowContainer.swift */; };
+		2CCB00EC2C087DB9006FC449 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB00EB2C087DB9006FC449 /* CalendarViewController.swift */; };
 		2CD7D7762BFCD53400A0A45D /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7D7752BFCD53400A0A45D /* ClassDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		2CAF665C2BF9B0E40056A4CE /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 		2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDivider.swift; sourceTree = "<group>"; };
 		2CAF66622BF9C7FC0056A4CE /* ProfileRowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRowContainer.swift; sourceTree = "<group>"; };
+		2CCB00EB2C087DB9006FC449 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2CD7D7752BFCD53400A0A45D /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +214,7 @@
 		2C5B5F582BF8824500F5674F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C8C84F72C0D69C5009EA270 /* Processing */,
 				2C5B5F792BF8C26300F5674F /* Auth */,
 				2C5B5F632BF8843700F5674F /* Tab */,
 			);
@@ -285,6 +288,14 @@
 				2C5B5F772BF8B85F00F5674F /* TextButton.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		2C8C84F72C0D69C5009EA270 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				2CCB00EB2C087DB9006FC449 /* CalendarViewController.swift */,
+			);
+			path = Processing;
 			sourceTree = "<group>";
 		};
 		2C9475282BF9F18500559108 /* Profile */ = {
@@ -442,6 +453,7 @@
 				2C94752C2BFA01A600559108 /* CustomNavigationTitle.swift in Sources */,
 				2C641B7A2BFBB55300731357 /* TaskDetailViewController.swift in Sources */,
 				2C2B075A2BFDCE09004F48E4 /* ProjectViewController.swift in Sources */,
+				2CCB00EC2C087DB9006FC449 /* CalendarViewController.swift in Sources */,
 				2C94752A2BF9F19E00559108 /* ProfileEditViewController.swift in Sources */,
 				2C5B5F7D2BF8C59100F5674F /* SampleViewController.swift in Sources */,
 				2C4BB0D52BFC9D2600EA2F07 /* AddButton.swift in Sources */,
