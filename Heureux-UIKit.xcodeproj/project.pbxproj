@@ -44,6 +44,7 @@
 		2C7AB34F2BFD812B00928DEE /* teaching.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C7AB34E2BFD812B00928DEE /* teaching.json */; };
 		2C7AB3512BFD94AC00928DEE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AB3502BFD94AC00928DEE /* UIColor+Extension.swift */; };
 		2C7AB3532BFD9DAA00928DEE /* ClassMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AB3522BFD9DAA00928DEE /* ClassMemberViewController.swift */; };
+		2C8C84F92C0D7726009EA270 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C84F82C0D7726009EA270 /* ImageButton.swift */; };
 		2C94752A2BF9F19E00559108 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9475292BF9F19E00559108 /* ProfileEditViewController.swift */; };
 		2C94752C2BFA01A600559108 /* CustomNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */; };
 		2C94B8002BFC21A5009BA1BD /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94B7FF2BFC21A5009BA1BD /* ChangePasswordViewController.swift */; };
@@ -96,6 +97,7 @@
 		2C7AB34E2BFD812B00928DEE /* teaching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teaching.json; sourceTree = "<group>"; };
 		2C7AB3502BFD94AC00928DEE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		2C7AB3522BFD9DAA00928DEE /* ClassMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMemberViewController.swift; sourceTree = "<group>"; };
+		2C8C84F82C0D7726009EA270 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		2C9475292BF9F19E00559108 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTitle.swift; sourceTree = "<group>"; };
 		2C94B7FF2BFC21A5009BA1BD /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +154,7 @@
 			children = (
 				2C98B6C82BFAF04700F0DE31 /* Model */,
 				2C5B5F6B2BF89B1400F5674F /* Extension */,
-				2C5B5F662BF8922C00F5674F /* CustomView */,
+				2C5B5F662BF8922C00F5674F /* ViewCustom */,
 				2C5B5F582BF8824500F5674F /* View */,
 				2C5B5F572BF8823600F5674F /* Supporting */,
 				2C50C3542BF8666800019688 /* Animation */,
@@ -176,6 +178,7 @@
 			children = (
 				2C94752B2BFA01A600559108 /* CustomNavigationTitle.swift */,
 				2C4BB0D42BFC9D2600EA2F07 /* AddButton.swift */,
+				2C8C84F82C0D7726009EA270 /* ImageButton.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -235,7 +238,7 @@
 			path = Tab;
 			sourceTree = "<group>";
 		};
-		2C5B5F662BF8922C00F5674F /* CustomView */ = {
+		2C5B5F662BF8922C00F5674F /* ViewCustom */ = {
 			isa = PBXGroup;
 			children = (
 				2C4BB0D12BFC9BE600EA2F07 /* Class */,
@@ -245,7 +248,7 @@
 				2CAF66602BF9C7CF0056A4CE /* ProfileView */,
 				2CAF665E2BF9C5CF0056A4CE /* SimpleDivider.swift */,
 			);
-			path = CustomView;
+			path = ViewCustom;
 			sourceTree = "<group>";
 		};
 		2C5B5F6B2BF89B1400F5674F /* Extension */ = {
@@ -436,6 +439,7 @@
 				2C5B5F762BF8A79B00F5674F /* GoogleButton.swift in Sources */,
 				2C94B8002BFC21A5009BA1BD /* ChangePasswordViewController.swift in Sources */,
 				2C434F182BF84B4E00E3577D /* LoginController.swift in Sources */,
+				2C8C84F92C0D7726009EA270 /* ImageButton.swift in Sources */,
 				2C5B5F622BF8843200F5674F /* ReportViewController.swift in Sources */,
 				2C5B5F602BF883F800F5674F /* TaskViewController.swift in Sources */,
 				2C5B5F652BF8844700F5674F /* DashboardViewController.swift in Sources */,

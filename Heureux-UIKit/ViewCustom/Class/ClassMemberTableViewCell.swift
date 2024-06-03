@@ -33,7 +33,7 @@ class ClassMemberTableViewCell: UITableViewCell {
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
-
+  
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     viewSetup()
@@ -53,7 +53,7 @@ class ClassMemberTableViewCell: UITableViewCell {
     contentView.addSubview(avatarImageView)
     contentView.addSubview(nameLabel)
     contentView.addSubview(mailLabel)
-
+    
     NSLayoutConstraint.activate([
       avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
       avatarImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)

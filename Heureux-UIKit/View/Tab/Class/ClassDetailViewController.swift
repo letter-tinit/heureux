@@ -33,59 +33,23 @@ class ClassDetailViewController: UIViewController {
     return animationView
   }()
   
-  private let seeMembersButton: UIButton = {
-    let button = UIButton(frame: .zero)
-    
-    var config = UIButton.Configuration.filled()
-    config.baseBackgroundColor = .colorPink.withAlphaComponent(0.5)
-    config.image = UIImage(systemName: "person.2")
-    config.imagePlacement = .leading
-    config.preferredSymbolConfigurationForImage = UIImage.SymbolConfiguration(scale: .small)
-    config.imagePadding = 4
-    config.baseForegroundColor = .red
-    
-    let attributes: [NSAttributedString.Key: Any] = [
-      .font: UIFont.rounded(ofSize: 14, weight: .regular)
-    ]
-    let attributedTitle = NSAttributedString(string: "See Members", attributes: attributes)
-    config.attributedTitle = AttributedString(attributedTitle)
-    
-    button.configuration = config
-    
-    button.layer.shadowColor = UIColor.black.cgColor
-    button.layer.shadowRadius = 7
-    button.layer.shadowOpacity = 0.3
-    button.layer.shadowOffset = CGSize(width: 10, height: 10)
-    
-    button.translatesAutoresizingMaskIntoConstraints = false
-    return button
-  }()
+  private let seeMembersButtonImage: UIImage = UIImage(systemName: "person.2") ?? UIImage()
   
-  private let descriptionStack: UIStackView = {
-    let stackView = UIStackView()
-    stackView.axis = .horizontal
-    stackView.translatesAutoresizingMaskIntoConstraints = false
-    return stackView
-  }()
+  lazy var seeMembersButton = ImageButton(image: seeMembersButtonImage, title: "See Members", color: .systemRed)
   
   private let descriptionLabel: UILabel = {
     let label = UILabel()
     label.text = "Description"
     label.textColor = .black
     label.font = .rounded(ofSize: 18, weight: .medium)
+    label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
+
+  private let addDescriptionImage: UIImage = UIImage(systemName: "plus") ?? UIImage()
   
-  private let descriptionEditingIcon: UIImageView = {
-    let imageView = UIImageView(frame: .zero)
-    let config = UIImage.SymbolConfiguration(weight: .semibold)
-    imageView.image = UIImage(systemName: "square.and.pencil", withConfiguration: config)
-    imageView.tintColor = .colorPink
-    imageView.contentMode = .scaleAspectFit
-    imageView.isUserInteractionEnabled = true
-    return imageView
-  }()
-  
+  lazy var addDescriptionButton = ImageButton(image: addDescriptionImage, title: "Add description", color: .systemBlue)
+
   private let descriptionTextView: UITextView = {
     let textView = UITextView()
     textView.font = .rounded(ofSize: 16, weight: .regular)
@@ -127,7 +91,7 @@ private extension ClassDetailViewController {
 // MARK: - VIEW SETTUP
 private extension ClassDetailViewController {
   func setupView() {
-    view.backgroundColor = .systemGray5
+    view.backgroundColor = .systemGray6
     addSubView()
     layout()
     dataSetup()
@@ -139,10 +103,8 @@ private extension ClassDetailViewController {
   func addSubView() {
     view.addSubview(animation)
     view.addSubview(seeMembersButton)
-    view.addSubview(descriptionStack)
-    descriptionStack.spacing = 10
-    descriptionStack.addArrangedSubview(descriptionLabel)
-    descriptionStack.addArrangedSubview(descriptionEditingIcon)
+    view.addSubview(descriptionLabel)
+    view.addSubview(addDescriptionButton)
     view.addSubview(descriptionTextView)
   }
 }
@@ -163,12 +125,17 @@ private extension ClassDetailViewController {
     ])
     
     NSLayoutConstraint.activate([
-      descriptionStack.topAnchor.constraint(equalTo: seeMembersButton.bottomAnchor, constant: 20),
-      descriptionStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+      descriptionLabel.topAnchor.constraint(equalTo: seeMembersButton.bottomAnchor, constant: 20),
+      descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
     ])
     
     NSLayoutConstraint.activate([
-      descriptionTextView.topAnchor.constraint(equalTo: descriptionStack.bottomAnchor, constant: 20),
+      addDescriptionButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 20),
+      addDescriptionButton.leadingAnchor.constraint(equalTo: descriptionLabel.leadingAnchor)
+    ])
+    
+    NSLayoutConstraint.activate([
+      descriptionTextView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 20),
       descriptionTextView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
       descriptionTextView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       descriptionTextView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
@@ -180,10 +147,7 @@ private extension ClassDetailViewController {
 private extension ClassDetailViewController {
   func setupAction() {
     seeMembersButton.addTarget(self, action: #selector(seeMembersButtonTapped), for: .touchUpInside)
-    
-    let gesture = UITapGestureRecognizer(target: self, action: #selector(editingTapped))
-    descriptionEditingIcon.addGestureRecognizer(gesture)
-    descriptionTextView.delegate = self
+    addDescriptionButton.addTarget(self, action: #selector(addDescriptionButtonTapped), for: .touchUpInside)
   }
 }
 
@@ -195,15 +159,28 @@ private extension ClassDetailViewController {
     present(nav, animated: true)
   }
   
-  @objc func editingTapped() {
-    if descriptionTextView.isUserInteractionEnabled {
-      descriptionTextView.isUserInteractionEnabled = false
-      descriptionTextView.returnKeyType = .done
-      changeEditingView(color: .colorPink, imageName: "square.and.pencil")
-    } else {
-      descriptionTextView.isUserInteractionEnabled = true
-      changeEditingView(color: .systemGreen, imageName: "checkmark")
+  @objc func addDescriptionButtonTapped() {
+    let alertController = UIAlertController(title: "Add Description", message: nil, preferredStyle: .alert)
+    alertController.addTextField { textField in
+      textField.placeholder = "Description"
+      textField.font = .rounded(ofSize: 16, weight: .medium)
+      textField.tintColor = .systemBlue
+      textField.textColor = .black
     }
+    
+    let addAction = UIAlertAction(title: "Create", style: .default) { _ in
+      guard let text = alertController.textFields![0].text else {
+        return
+      }
+      print(text)
+    }
+    
+    let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+    
+    alertController.addAction(cancelAction)
+    alertController.addAction(addAction)
+    
+    present(alertController, animated: true)
   }
 }
 
@@ -211,31 +188,19 @@ private extension ClassDetailViewController {
 private extension ClassDetailViewController {
   func dataSetup() {
     if let description = currentClass.description {
+      descriptionTextView.isHidden = false
       descriptionTextView.text = description
-      descriptionTextView.textColor = .black
+      addDescriptionButton.isHidden = true
     } else {
-      descriptionTextView.text = "No description"
-      descriptionTextView.textColor = .systemGray4
+      descriptionTextView.isHidden = true
+      addDescriptionButton.isHidden = false
     }
   }
 }
 
 extension ClassDetailViewController: UITextViewDelegate {
-  func textViewDidBeginEditing(_ textView: UITextView) {
-    if let description = currentClass.description {
-      descriptionTextView.text = description
-    } else {
-      descriptionTextView.text = ""
-      descriptionTextView.textColor = .black
-    }
-  }
 }
 
 // MARK: - HELPER
 private extension ClassDetailViewController {
-  func changeEditingView(color: UIColor, imageName: String) {
-    let config = UIImage.SymbolConfiguration(weight: .semibold)
-    descriptionEditingIcon.image = UIImage(systemName: imageName, withConfiguration: config)
-    descriptionEditingIcon.tintColor = .colorPink
-  }
 }

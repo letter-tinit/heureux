@@ -124,7 +124,6 @@ private extension ClassViewController {
 // MARK: - SETUP DATA
 private extension ClassViewController {
   func setupData() {
-    //    classes
   }
 }
 
